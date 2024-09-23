@@ -1,0 +1,23 @@
+.message {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: var(--card-radius);
+    font-weight: 400;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    color: var(--white);
+    box-shadow:0 0 10px var(--gray-5);
+}
+
+.error {
+    background-color: #ae5555;
+}
+
+.warning {
+    background-color: #917931;
+}
+
+.success {
+    background-color: #518a5f;
+}

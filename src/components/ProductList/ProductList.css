@@ -1,0 +1,44 @@
+.product-list {
+    margin-top: 90px;
+}
+.product-list h2{
+    margin-bottom:15px;
+    font-weight:500;
+}
+.product-list ul{
+    display: grid;
+    gap:15px;
+    grid-template-columns: auto auto auto;
+}
+.card {
+    background: var(--white);
+    border-radius: var(--card-radius);
+    padding: 20px;
+    text-align: left;
+    list-style: none;
+}
+.card p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 10px 0;
+    color: var(--gray-6);
+}
+.card h3{
+    color: var(--secondary);
+    font-weight:500;
+}
+.card h4{
+    margin:10px 0;
+    color:var(--gray-7);
+}
+
+@media all and (max-width: 992px) {
+    .product-list ul{
+        grid-template-columns: auto auto;
+    }
+}
+@media all and (max-width: 767px) {
+    .product-list ul{
+        grid-template-columns: auto;
+    }
+}
