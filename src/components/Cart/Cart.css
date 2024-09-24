@@ -17,14 +17,14 @@
 
 .cart .remove {
     padding: 5px 10px;
-    color: var(--red-1);
-    border-color: var(--red-1);
+    color: var(--error);
+    border-color: var(--error);
     font-size: 12px;
     font-weight: 400;
 }
 
 .cart .remove:hover {
-    box-shadow: inset 0 100px 0 var(--red-1);
+    box-shadow: inset 0 100px 0 var(--error);
     color: var(--white);
 }
 

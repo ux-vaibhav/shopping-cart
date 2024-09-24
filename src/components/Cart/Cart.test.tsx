@@ -1,7 +1,4 @@
-// Cart.test.tsx
-
-import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Cart from "./Cart";
 
 describe("Cart component", () => {
@@ -23,10 +20,10 @@ describe("Cart component", () => {
     expect(screen.getByText("2 Items ready for checkout")).toBeInTheDocument();
     expect(screen.getByText("Product 1")).toBeInTheDocument();
     expect(screen.getByText("Quantity 2")).toBeInTheDocument();
-    expect(screen.getByText("20")).toBeInTheDocument(); // Price * Quantity
+    expect(screen.getByText("20")).toBeInTheDocument(); 
     expect(screen.getByText("Product 2")).toBeInTheDocument();
     expect(screen.getByText("Quantity 1")).toBeInTheDocument();
-    expect(screen.getByText("15")).toBeInTheDocument(); // Price * Quantity
+    expect(screen.getByText("15")).toBeInTheDocument(); 
   });
 
   it("calculates the total price correctly", () => {

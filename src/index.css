@@ -1,65 +1,74 @@
+/* Import Google Fonts for the application */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Define CSS custom properties (variables) for color and styling */
 :root {
-  --primary: #274988;
-  --secondary: #2d925e;
-  --white: #ffffff;
-  --red-1: #d35c5c;
-  --gray-0: #f8f9fa;
-  --gray-1: #f1f3f5;
-  --gray-2: #e9ecef;
-  --gray-3: #dee2e6;
-  --gray-4: #ced4da;
-  --gray-5: #adb5bd;
-  --gray-6: #868e96;
-  --gray-7: #495057;
-  --gray-8: #343a40;
-  --gray-9: #212529;
-  --card-radius: 5px;
-  --button-radius: 30px;
-  --font-family: "Roboto", sans-serif;
+  --primary: #274988; /* Primary color */
+  --secondary: #2d925e; /* Secondary color */
+  --white: #ffffff; /* White color */
+  --gray-0: #f8f9fa; /* Light gray */
+  --gray-1: #f1f3f5; /* Light gray */
+  --gray-2: #e9ecef; /* Light gray */
+  --gray-3: #dee2e6; /* Gray */
+  --gray-4: #ced4da; /* Gray */
+  --gray-5: #adb5bd; /* Gray */
+  --gray-6: #868e96; /* Dark gray */
+  --gray-7: #495057; /* Dark gray */
+  --gray-8: #343a40; /* Dark gray */
+  --gray-9: #212529; /* Very dark gray */
+  --error: #ae5555; /* Error color */
+  --warning: #917931; /* Warning color */
+  --success: #518a5f; /* Success color */
+  --card-radius: 5px; /* Border radius for cards */
+  --button-radius: 30px; /* Border radius for buttons */
+  --font-family: "Roboto", sans-serif; /* Font family */
 }
 
+/* Global styles for all elements */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
+/* Styles for the body element */
 body {
-  background-color: var(--gray-1);
-  font-family: var(--font-family);
-  color: var(--gray-8);
+  background-color: var(--gray-1); /* Set background color */
+  font-family: var(--font-family); /* Use defined font family */
+  color: var(--gray-8); /* Set text color */
 }
 
+/* Container class to center content and control width */
 .container {
-  margin: 0 auto;
-  max-width: 1024px;
-  padding: 0 15px;
+  margin: 0 auto; /* Center container */
+  max-width: 1024px; /* Maximum width */
+  padding: 0 15px; /* Horizontal padding */
 }
 
+/* Heading styles to set color */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--primary);
+  color: var(--primary); /* Set heading color */
 }
 
+/* Custom scrollbar styles */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 4px; /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--gray-2);
+  background: var(--gray-2); /* Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gray-5);
-  border-radius: 5px;
+  background: var(--gray-5); /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gray-5);
+  background: var(--gray-5); /* Thumb color on hover */
 }
